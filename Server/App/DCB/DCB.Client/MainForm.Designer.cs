@@ -29,11 +29,13 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            pictureBox1 = new PictureBox();
             panel2 = new Panel();
             panel3 = new Panel();
-            pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -44,6 +46,14 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(69, 64);
             panel1.TabIndex = 0;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(69, 64);
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
             // 
             // panel2
             // 
@@ -59,25 +69,29 @@
             panel3.Size = new Size(67, 64);
             panel3.TabIndex = 1;
             // 
-            // pictureBox1
+            // pictureBox2
             // 
-            pictureBox1.Location = new Point(0, 0);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(69, 64);
-            pictureBox1.TabIndex = 2;
-            pictureBox1.TabStop = false;
+            pictureBox2.BorderStyle = BorderStyle.FixedSingle;
+            pictureBox2.Image = Properties.Resources.Load1;
+            pictureBox2.Location = new Point(11, 91);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(990, 524);
+            pictureBox2.TabIndex = 2;
+            pictureBox2.TabStop = false;
             // 
-            // Form1
+            // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1068, 627);
+            ClientSize = new Size(1011, 627);
+            Controls.Add(pictureBox2);
             Controls.Add(panel3);
             Controls.Add(panel1);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "MainForm";
+            Text = "Бар \"У мертвого программиста\"";
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
         }
 
@@ -87,5 +101,6 @@
         private PictureBox pictureBox1;
         private Panel panel2;
         private Panel panel3;
+        private PictureBox pictureBox2;
     }
 }
